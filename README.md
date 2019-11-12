@@ -7,5 +7,18 @@ This repository includes implementation of algorithms based on __IOHexperimenter
 * For details of the __IOHanalyzer__ project, please visit the [wiki page](https://iohprofiler.github.io).
 * For reference of algorithm, please find in the paper[Benchmarking discrete optimization heuristics with IOHprofiler](https://dl.acm.org/citation.cfm?id=3326810).
 
+## List of algorithms
+
+* Randomized Local Search
+* Evolutionary algorithm (EA) with static mutation rate
+* Fast genetic algorith ([https://dl.acm.org/citation.cfm?id=3071301](https://dl.acm.org/citation.cfm?id=3071301))
+* The two-rate EA with self-adjusting mu-tation rates ([https://dl.acm.org/citation.cfm?id=3071279](https://dl.acm.org/citation.cfm?id=3071279))
+* A variant of EA sampling the mutation strength from a normal distribution ([https://ieeexplore.ieee.org/abstract/document/8790107](https://ieeexplore.ieee.org/abstract/document/8790107))
+* The upper EA with an adaptive choice of the variance in the normal distribution from which the mutation strengths are sampled ([https://ieeexplore.ieee.org/abstract/document/8790107](https://ieeexplore.ieee.org/abstract/document/8790107))
+* The EA with log-normal self-adaptation of the mutation rate ([https://link.springer.com/chapter/10.1007/3-540-61286-6_141](https://link.springer.com/chapter/10.1007/3-540-61286-6_141))
+* A binary crossover-based EA with self-adjusting population size ([https://www.sciencedirect.com/science/article/pii/S0304397514009451](https://www.sciencedirect.com/science/article/pii/S0304397514009451)). 
+* "vanilla" genetic algorithm ([https://dl.acm.org/citation.cfm?id=229867](https://dl.acm.org/citation.cfm?id=229867))
+
+
 # Contact
 If you have any questions, comments or suggestions, please don't hesitate contacting us [IOHprofiler@liacs.leidenuniv.nl](IOHprofiler@liacs.leidenuniv.nl)!
