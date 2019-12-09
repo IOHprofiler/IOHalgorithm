@@ -5,7 +5,7 @@ This repository includes implementation of algorithms based on __IOHexperimenter
 * For introduction of __IOHexperimenter__, please visit [https://github.com/IOHprofiler/IOHexperimenter](https://github.com/IOHprofiler/IOHexperimenter).
 * For usage of __IOHanalyzer__, please visit [github page](https://github.com/IOHprofiler/IOHanalyzer) or the [online host](http://iohprofiler.liacs.nl).
 * For details of the __IOHanalyzer__ project, please visit the [wiki page](https://iohprofiler.github.io).
-* For reference of algorithm, please find in the paper[Benchmarking discrete optimization heuristics with IOHprofiler](https://dl.acm.org/citation.cfm?id=3326810).
+* For reference of algorithm, please find in the paper[Benchmarking discrete optimization heuristics with IOHprofiler](https://dl.acm.org/citation.cfm?id=3326810), or visit the [page](https://iohprofiler.github.io/Background/algorithms/).
 
 ## List of algorithms
 
