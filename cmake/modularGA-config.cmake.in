@@ -1,0 +1,7 @@
+get_filename_component(modularGA_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+if(NOT TARGET @PROJECT_NAME@::@PROJECT_NAME@)
+    include("${modularGA_CMAKE_DIR}/@PROJECT_NAME@-targets.cmake")
+endif()
+
+set(modularGA_LIBRARIES @PROJECT_NAME@::@PROJECT_NAME@)

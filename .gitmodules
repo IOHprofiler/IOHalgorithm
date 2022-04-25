@@ -1,0 +1,3 @@
+[submodule "IOH"]
+	path = IOH
+	url = https://github.com/IOHprofiler/IOHexperimenter.git
