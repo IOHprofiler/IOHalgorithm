@@ -48,7 +48,7 @@
 
 #ifndef _SA_H_
 #define _SA_H_
-#include "common.hpp"
+#include "utils/common.hpp"
 #include <math.h>
 namespace modularGA
 {

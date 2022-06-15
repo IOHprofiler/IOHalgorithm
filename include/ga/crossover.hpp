@@ -10,7 +10,7 @@
 /// \author Furong Ye
 /// \date 2020-07-02
 
-#include "common.hpp"
+#include "utils/common.hpp"
 
 namespace modularGA {
 

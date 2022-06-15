@@ -17,7 +17,7 @@
 
 #ifndef _OPOEA_H_
 #define _OPOEA_H_
-#include "common.hpp"
+#include "utils/common.hpp"
 
 namespace modularGA
 {

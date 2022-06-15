@@ -31,7 +31,7 @@
 
 #ifndef _OPOFEA_H_
 #define _OPOFEA_H_
-#include "common.hpp"
+#include "utils/common.hpp"
 #include <tr1/unordered_map>
 namespace modularGA
 {

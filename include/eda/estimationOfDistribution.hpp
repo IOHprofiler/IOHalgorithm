@@ -9,7 +9,7 @@
 #ifndef _ESTIMATION_OF_DISTRIBUTION_H
 #define _ESTIMATION_OF_DISTRIBUTION_H
 
-#include "common.hpp"
+#include "utils/common.hpp"
 namespace modularGA
 {
 

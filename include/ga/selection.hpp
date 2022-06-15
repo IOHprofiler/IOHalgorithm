@@ -9,7 +9,7 @@
 #ifndef _SELECTION_H_
 #define _SELECTION_H_
 
-#include "common.hpp"
+#include "utils/common.hpp"
 
 namespace modularGA
 {

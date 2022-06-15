@@ -8,7 +8,7 @@
 /// \author Furong Ye
 /// \date 2020-07-02
 
-#include "common.hpp"
+#include "utils/common.hpp"
 
 #define DEFAULT_MUTATION_STRENGTH_ 1
 #define DEFAULT_MUTATION_RATE_ 0.01

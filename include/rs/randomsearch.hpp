@@ -10,7 +10,7 @@
 #ifndef _RANDOMSEARCH_H_
 #define _RANDOMSEARCH_H_
 
-#include "common.hpp"
+#include "utils/common.hpp"
 namespace modularGA
 {
   namespace rs

@@ -12,7 +12,7 @@
 #ifndef _GHC_H_
 #define _GHC_H_
 
-#include "common.hpp"
+#include "utils/common.hpp"
 namespace modularGA
 {
   namespace ghc

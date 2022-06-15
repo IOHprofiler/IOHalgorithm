@@ -1,6 +1,6 @@
 #pragma once
 
-#include "common.hpp"
+#include "utils/common.hpp"
 #include "geneticAlgorithm.hpp"
 #include "mutation.hpp"
 #include "selection.hpp"

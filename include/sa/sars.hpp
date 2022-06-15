@@ -55,7 +55,7 @@
  */
 #ifndef _SARS_H_
 #define _SARS_H_
-#include "common.hpp"
+#include "utils/common.hpp"
 #include <math.h>
 namespace modularGA
 {
