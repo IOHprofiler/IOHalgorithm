@@ -115,7 +115,7 @@ namespace modularGA {
             /// \param category_para {relation between crossover and mutation, crossover operator, mutation operator, selection operator}
             /// \param suite a shared pointer of IOHprofiler_suite
 
-      virtual void run(const vector<int>& integer_para, const vector<double>& continuous_para, const vector<string>& category_para, shared_ptr<ioh::suite::Suite<ioh::problem::Integer> > suite) {
+      virtual void run(const vector<int>& integer_para, const vector<double>& continuous_para, const vector<string>& category_para, shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective> > suite) {
         this->SetAllParameters(integer_para, continuous_para, category_para);
 
         for (const auto &p : *suite) {
@@ -151,7 +151,7 @@ namespace modularGA {
             /// \param continuous_para {crossover probablity, probablity replacing bit by the bit of the other individual of uniform crossover,  mutation rate, mean of normalized bit mutation, standard deviation of normalized bit mutation, beta value of fast mutation}
             /// \param category_para {relation between crossover and mutation, crossover operator, mutation operator, selection operator}
             /// \param suite a shared pointer of IOHprofiler_suite
-      virtual void run_N(const vector<int>& integer_para, const vector<double>& continuous_para, const vector<string>& category_para, shared_ptr<ioh::suite::Suite<ioh::problem::Integer> > suite) {
+      virtual void run_N(const vector<int>& integer_para, const vector<double>& continuous_para, const vector<string>& category_para, shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective> > suite) {
         this->SetAllParameters(integer_para, continuous_para, category_para);
         for (const auto &p : *suite) {
           this->problem_ = p;
@@ -166,7 +166,7 @@ namespace modularGA {
             /// \param category_para {relation between crossover and mutation, crossover operator, mutation operator, selection operator}
             /// \param suite a shared pointer of IOHprofiler_suite
 
-      virtual void run_N(shared_ptr<ioh::suite::Suite<ioh::problem::Integer> > suite) {
+      virtual void run_N(shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective> > suite) {
          for (const auto &p : *suite) {
           this->problem_ = p;
           size_t r = 0;
@@ -253,7 +253,7 @@ namespace modularGA {
         //    this->ecdf_logger_->track_problem(*this->problem_);
         //  }
         this->selected_parents_ = vector<size_t>(2);
-        this->optimum_ = this->problem_->objective().y;
+        this->optimum_ = this->problem_->optimum().y;
         this->PowerLawDistribution(this->problem_->meta_data().n_variables);
         this->parents_fitness_.clear();
         this->parents_population_.clear();
@@ -280,7 +280,7 @@ namespace modularGA {
         }
       }
 
-      void AssignProblem(shared_ptr<ioh::problem::Integer> problem_ptr) {
+      void AssignProblem(shared_ptr<ioh::problem::IntegerSingleObjective> problem_ptr) {
         this->problem_ = problem_ptr;
       }
 
@@ -562,7 +562,7 @@ namespace modularGA {
       vector<size_t> selected_parents_;
 
       /// TODO: we assume the type of problem are integer only now.
-      std::shared_ptr<ioh::problem::Integer> problem_;
+      std::shared_ptr<ioh::problem::IntegerSingleObjective> problem_;
       std::shared_ptr<ioh::logger::Analyzer> csv_logger_;
       //shared_ptr< IOHprofiler_ecdf_logger<int> > ecdf_logger_;
 

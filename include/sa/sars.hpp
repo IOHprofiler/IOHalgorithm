@@ -157,7 +157,7 @@ namespace modularGA
             return epsilon;
         }
 
-        void simulated_annealing_exp_rs(shared_ptr<ioh::problem::Integer> problem,
+        void simulated_annealing_exp_rs(shared_ptr<ioh::problem::IntegerSingleObjective> problem,
                                         shared_ptr<ioh::logger::Analyzer> logger,
                                         const unsigned long long eval_budget)
         {
@@ -276,7 +276,7 @@ namespace modularGA
 
         // run the simulated annealing algorithm with automatic configuration and restarts
         void run_simulated_annealing_exp_rs(const string folder_path,
-                                            shared_ptr<ioh::suite::Suite<ioh::problem::Integer>> suite,
+                                            shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective>> suite,
                                             const unsigned long long eval_budget,
                                             const unsigned long long independent_runs,
                                             const unsigned long long rand_seed)

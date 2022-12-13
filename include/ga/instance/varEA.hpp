@@ -17,7 +17,7 @@ namespace modularGA
         this->set_r_n(init_r_n_);
       }
 
-      void run(string folder_path, string folder_name, shared_ptr<ioh::suite::Suite<ioh::problem::Integer>> suite, int eval_budget, int gene_budget, int independent_runs, unsigned rand_seed)
+      void run(string folder_path, string folder_name, shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective>> suite, int eval_budget, int gene_budget, int independent_runs, unsigned rand_seed)
       {
         string algorithm_name = "(1+" + to_string(this->get_lambda()) + ")-varEA>0";
         std::shared_ptr<ioh::logger::Analyzer> logger(new ioh::logger::Analyzer(
