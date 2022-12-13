@@ -138,7 +138,7 @@ static std::vector<int> get_int_vector_parse_string(std::string input, const int
  *    sars : the simulated annealing algorithm with exponential temperature schedule with iterative restarts
  *    fea : (1+1)-EA>0 with frequency fitness assignment
  */
-void runAlgorithm(shared_ptr<ioh::suite::Suite<ioh::problem::Integer>> suite, const string algorithm_name, const string dir, const int budget, const int runs, const unsigned seed)
+void runAlgorithm(shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective>> suite, const string algorithm_name, const string dir, const int budget, const int runs, const unsigned seed)
 {
   if (algorithm_name == "ea")
   {
@@ -256,7 +256,7 @@ int main(int argc, const char *argv[])
   auto dimensions = get_int_vector_parse_string(dimension_str,2,20000);
 
   if (suite_name == "pbo") {
-    auto suite = ioh::suite::SuiteRegistry<ioh::problem::Integer>::instance()
+    auto suite = ioh::suite::SuiteRegistry<ioh::problem::IntegerSingleObjective>::instance()
         .create("PBO", problems , instances, dimensions);
     runAlgorithm(suite, algorithm_name, dir, budget, runs, seed);
   } else {

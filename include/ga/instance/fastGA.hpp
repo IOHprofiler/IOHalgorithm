@@ -21,7 +21,7 @@ namespace modularGA
         this->set_selection_operator("BESTPLUS");
       }
 
-      void run(string folder_path, string folder_name, shared_ptr<ioh::suite::Suite<ioh::problem::Integer>> suite, int eval_budget, int gene_budget, int independent_runs, unsigned rand_seed)
+      void run(string folder_path, string folder_name, shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective>> suite, int eval_budget, int gene_budget, int independent_runs, unsigned rand_seed)
       {
         string algorithm_name = "(" + to_string(this->get_mu()) + "+" + to_string(this->get_lambda()) + ") fast GA";
          std::shared_ptr<ioh::logger::Analyzer > logger(new ioh::logger::Analyzer(

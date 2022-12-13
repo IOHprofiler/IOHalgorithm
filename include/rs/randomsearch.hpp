@@ -119,7 +119,7 @@ namespace modularGA
         return result;
       }
 
-      void run(shared_ptr<ioh::suite::Suite<ioh::problem::Integer>> suite)
+      void run(shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective>> suite)
       {
         for (auto &p : *suite)
         {
@@ -134,7 +134,7 @@ namespace modularGA
         }
       }
 
-      void run(string folder_path, string folder_name, shared_ptr<ioh::suite::Suite<ioh::problem::Integer>> suite, int eval_budget, int independent_runs, unsigned rand_seed)
+      void run(string folder_path, string folder_name, shared_ptr<ioh::suite::Suite<ioh::problem::IntegerSingleObjective>> suite, int eval_budget, int independent_runs, unsigned rand_seed)
       {
         string algorithm_name = "random search";
         std::shared_ptr<ioh::logger::Analyzer> logger(new ioh::logger::Analyzer(
@@ -159,7 +159,7 @@ namespace modularGA
       {
         random_gen.seed(seed);
       }
-      void AssignProblem(shared_ptr<ioh::problem::Integer> problem_ptr)
+      void AssignProblem(shared_ptr<ioh::problem::IntegerSingleObjective> problem_ptr)
       {
         this->problem_ = problem_ptr;
       }
@@ -257,7 +257,7 @@ namespace modularGA
       size_t independent_runs_; /// < number of independent runs.
 
       /// TODO: we assume the type of problem are integer only now.
-      shared_ptr<ioh::problem::Integer> problem_;
+      shared_ptr<ioh::problem::IntegerSingleObjective> problem_;
       shared_ptr<ioh::logger::Analyzer> csv_logger_;
     };
   }
