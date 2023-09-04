@@ -12,3 +12,4 @@
 #include "instance/twoRateEA.hpp"
 #include "instance/normEA.hpp"
 #include "instance/varEA.hpp"
+#include "instance/logNormalEA.hpp"
